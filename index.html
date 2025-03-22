@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aslam's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">Aslam</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <!-- <li><a href="#projects">Projects</a></li> -->
+            <li><a href="#contact" onclick="showContact(event)">Contact</a></li>
+        </ul>
+        
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content ">
+            <div class="profile-image">
+                <!-- Placeholder for the image -->
+                <img src="profile.png" alt="Profile Picture">
+            </div>
+            <div class="hero-text">
+                <p>Hello, I'm</p>
+                <h1>Aslam</h1>
+                <h2>Full-Stack Web Developer</h2>
+                <div class="buttons">
+                    <a href="Aslam.pdf.pdf" download class="btn btn-primary">Download CV</a>
+                    <a href="#" class="btn btn-secondary" onclick="showContact(event)">Contact Me</a>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/aslam-p" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/aslam-wq" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <!-- <h2>Get To Know More</h2> -->
+        <h1>About Me</h1>
+        <div class="about-content">
+            <div class="profile-image">
+                <img src="profile.png" alt="Profile Picture">
+            </div>
+            <div class="about-details">
+                <div class="info-boxes">
+                    <div class="info-box">
+                        <h3>Experience</h3>
+                        <!-- <p>1+ years<br>Freelancing</p> -->
+                        <p>Developer Intern
+</p>
+                    </div>
+                    <!-- <div class="info-box">
+                        <h3>Education</h3>
+                        <p>Diploma<br>Engineering</p>
+                    </div> -->
+                </div>
+                <p>Entrepreneur & Full-Stack Developer. Innovator at heart, I craft cutting-edge web solutions with Python Django, React, MySQL, and REST APIs. My entrepreneurial drive shapes the future of web tech, delivering scalable and impactful user experiences.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <!-- <h2>Explore My</h2> -->
+        <h1>Experience</h1>
+        <div class="experience-content">
+            <div class="skill-box">
+                <h3>Frontend Development</h3>
+                <ul>
+                    <li>HTML <span>Experienced</span></li>
+                    <li>CSS3 <span>Experienced</span></li>
+                    <li>JavaScript <span>Intermediate</span></li>
+                    <li>Bootstrap <span>Experienced</span></li>
+                    <li>React <span>Intermediate</span></li>
+                    <li>Figma <span>Intermediate</span></li>
+                </ul>
+            </div>
+            <div class="skill-box">
+                <h3>Backend Development</h3>
+                <ul>
+                    <li>Python <span>Experienced</span></li>
+                    <li>Django <span>Experienced</span></li>
+                    <li>Rest Api <span>Intermediate</span></li>
+                    <li>MySQL  <span>Intermediate</span></li>
+                    <li>Git <span>Intermediate</span></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- SweetAlert2 Library -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+
+    
+    
+</body>
+</html>

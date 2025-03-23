@@ -7,21 +7,33 @@
     <link rel="stylesheet" href="style.css">
     <!-- Font Awesome for social media icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
     
 </head>
 <body>
     <!-- Navigation Bar -->
-    <nav>
+    <!-- <nav>
         <div class="logo">Aslam</div>
         <ul class="nav-links">
+            
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
-            <!-- <li><a href="#projects">Projects</a></li> -->
+         
             <li><a href="#contact" onclick="showContact(event)">Contact</a></li>
         </ul>
         
+    </nav> -->
+    <nav>
+        <div class="logo">Aslam</div>
+        <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact" onclick="showContact(event)">Contact</a></li>
+        </ul>
     </nav>
-
+    
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-content ">
@@ -34,8 +46,8 @@
                 <h1>Aslam</h1>
                 <h2>Full-Stack Web Developer</h2>
                 <div class="buttons">
-                    <a href="Aslam.pdf.pdf" download class="btn btn-primary">Download CV</a>
-                    <a href="#" class="btn btn-secondary" onclick="showContact(event)">Contact Me</a>
+                    <a href="Aslam.pdf.pdf" download class="btn btn-outline-primary">Download CV</a>
+                    <a href="#" class="contact btn btn-secondary" onclick="showContact(event)">Contact Me</a>
                 </div>
                 <div class="social-icons">
                     <a href="https://www.linkedin.com/in/aslam-p" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -57,14 +69,11 @@
                 <div class="info-boxes">
                     <div class="info-box">
                         <h3>Experience</h3>
-                        <!-- <p>1+ years<br>Freelancing</p> -->
+                        
                         <p>Developer Intern
 </p>
                     </div>
-                    <!-- <div class="info-box">
-                        <h3>Education</h3>
-                        <p>Diploma<br>Engineering</p>
-                    </div> -->
+                    
                 </div>
                 <p>Entrepreneur & Full-Stack Developer. Innovator at heart, I craft cutting-edge web solutions with Python Django, React, MySQL, and REST APIs. My entrepreneurial drive shapes the future of web tech, delivering scalable and impactful user experiences.</p>
             </div>
@@ -100,7 +109,22 @@
             </div>
         </div>
     </section>
-    
+    <script>
+        // Toggle menu functionality
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Placeholder for showContact function
+        function showContact(event) {
+            event.preventDefault();
+            console.log('Contact link clicked');
+            // Add your contact display logic here
+        }
+    </script>
 
     <!-- SweetAlert2 Library -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
